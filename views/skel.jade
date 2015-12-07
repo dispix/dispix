@@ -1,0 +1,43 @@
+doctype html
+html(lang='en')
+	head
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='description', content='Dispix personal website')
+		meta(name='author', content='Octave "Dispix" Raimbault')
+		title Dispix.net
+		meta(charset='utf-8')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		// Google fonts
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,300,500|Roboto:400,700", type="text/css")
+		// Chrome, Firefox OS and Opera
+		meta(name="theme-color", content="rgb(49, 131, 254)")
+		// Windows Phone
+		meta(name="msapplication-navbutton-color", content="rgb(49, 131, 254)")
+		// iOS Safari 
+		meta(name="apple-mobile-web-app-status-bar-style", content="rgb(49, 131, 254)")
+		// jQuery
+		script(src='js/jquery.min.js')
+		// Reset css
+		link(rel="stylesheet", href="css/reset.css", type="text/css")
+		// Bootstrap Core CSS
+		link(rel="stylesheet", href="css/bootstrap.min.css", type="text/css")
+		// Custom CSS
+		link(rel="stylesheet", href="css/style.css", type="text/css")
+	body
+		include nav.jade
+		section.home
+			include home.jade
+		main.main.container-fluid
+			.row
+				section.skills
+					include skills.jade
+				section.projects
+					include projects.jade
+				section.story
+					include story.jade
+				section.contact
+					include contact.jade
+		// Bootstrap Core JavaScript
+		script(src='js/bootstrap.min.js')

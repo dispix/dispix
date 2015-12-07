@@ -1,0 +1,23 @@
+{
+  "name": "dispix",
+  "version": "0.1.0",
+  "description": "My website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dispix/dispix.git"
+  },
+  "author": "dispix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dispix/dispix/issues"
+  },
+  "homepage": "https://github.com/dispix/dispix#readme",
+  "dependencies": {
+    "express": "^4.13.3",
+    "jade": "^1.11.0"
+  }
+}
