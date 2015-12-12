@@ -19,6 +19,8 @@ html(lang='en')
 		meta(name="apple-mobile-web-app-status-bar-style", content="rgb(49, 131, 254)")
 		// jQuery
 		script(src='js/jquery.min.js')
+		// Custom js
+		script(src='js/main.js')
 		// Reset css
 		link(rel="stylesheet", href="css/reset.css", type="text/css")
 		// Bootstrap Core CSS
@@ -27,17 +29,17 @@ html(lang='en')
 		link(rel="stylesheet", href="css/style.css", type="text/css")
 	body
 		include nav.jade
-		section.home
+		section#home.home
 			include home.jade
 		main.main.container-fluid
 			.row
-				section.skills
+				section#skills.skills
 					include skills.jade
-				section.projects
+				section#projects.projects
 					include projects.jade
-				section.story
+				section#story.story
 					include story.jade
-				section.contact
+				section#contact.contact
 					include contact.jade
 		// Bootstrap Core JavaScript
 		script(src='js/bootstrap.min.js')
