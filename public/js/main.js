@@ -33,7 +33,7 @@ $(document).ready(function(){
 	$(document).scroll(function()
 	{
 		var y = $(this).scrollTop()
-		var height = $(window).height() - 51
+		var height = $(window).height() - offset - 1
 
 		if (y > height)
 		{
@@ -44,15 +44,19 @@ $(document).ready(function(){
 			$('#navbar').css('box-shadow', 'none')
 		}
 
-		// var pos = $('#projects').offset()['top'] - $('#skills').height()
-		// if (pos < (y - 51) )
+		// if (y >= ($('#projects').offset()['top'] - $(window).height()))
 		// {
-		// 	$('#skills').css('position', 'fixed')
-		// 	$('#skills').css('top', $('#home').height())
+		//
+		// 	$('#skills').addClass('locked')
+		// 	$('#skills').css('top', (offset - ($('#skills').height() - $(window).height())))
+		// 	$('#projects').css('margin-top', $('#home').height() + $('#skills').height())
 		// }
 		// else
 		// {
-		// 	$('#skills').css('position', 'initial')
+		// 	console.log(offset - ($('#skills').height() - $(window).height()));
+		// 	$('#skills').removeClass('blocked')
+		// 	$('#skills').css('top', '')
+		// 	$('#projects').css('margin-top', '')
 		// }
 	})
 })
