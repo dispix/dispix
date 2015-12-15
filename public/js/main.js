@@ -55,21 +55,4 @@ $(document).ready(function(){
 		// 	$('#skills').css('position', 'initial')
 		// }
 	})
-
-
-	// Scroll fire events
-	// $(document).scroll(function() {
-	// 	$('.single-skill').css('opacity', '0')
-	// 	var y = $(this).scrollTop()
-	// 	var height = $( window ).height()
-	//
-	// 	if (y > (height + 400))
-	// 	{
-	// 		$('.single-skill').fadeIn()
-	// 	}
-	// 	else
-	// 	{
-	// 		$('.single-skill').fadeOut()
-	// 	}
-	// })
 })
