@@ -43,6 +43,17 @@ $(document).ready(function(){
 		{
 			$('#navbar').css('box-shadow', 'none')
 		}
+
+		// var pos = $('#projects').offset()['top'] - $('#skills').height()
+		// if (pos < (y - 51) )
+		// {
+		// 	$('#skills').css('position', 'fixed')
+		// 	$('#skills').css('top', $('#home').height())
+		// }
+		// else
+		// {
+		// 	$('#skills').css('position', 'initial')
+		// }
 	})
 
 
