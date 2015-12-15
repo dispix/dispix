@@ -10,9 +10,23 @@ $(document).ready(function(){
 	// Navbar clicks offset
 	$('#navbar li a').click(function(event)
 	{
-		event.preventDefault()
-		$($(this).attr('href'))[0].scrollIntoView()
-		scrollBy(0, -offset)
+		if ($(this).attr('href') == '#home')
+		{
+			event.preventDefault()
+			$(document).scrollTop(0)
+		}
+		else
+		{
+			event.preventDefault()
+			$($(this).attr('href'))[0].scrollIntoView()
+			scrollBy(0, -offset)
+		}
+	})
+
+	// Add active class on panel
+	$('collapsed').click(function(){
+		$('.skill panel').removeClass('active')
+		$(this).addClass('active')
 	})
 
 	// Navbar shadow after main div
@@ -23,7 +37,7 @@ $(document).ready(function(){
 
 		if (y > height)
 		{
-			$('#navbar').css('box-shadow', '0 0 10px rgba(51, 51, 51, 1)')
+			$('#navbar').css('box-shadow', 'inset 0 -3px 5px -1px rgba(51, 51, 51, .6)')
 		}
 		else
 		{

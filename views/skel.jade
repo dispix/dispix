@@ -31,15 +31,14 @@ html(lang='en')
 		include nav.jade
 		section#home.home
 			include home.jade
-		main.main.container-fluid
-			.row
-				section#skills.skills
-					include skills.jade
-				section#projects.projects
-					include projects.jade
-				section#story.story
-					include story.jade
-				section#contact.contact
-					include contact.jade
+		main.main
+			section#skills.skills
+				include skills.jade
+			section#projects.projects
+				include projects.jade
+			section#story.story
+				include story.jade
+			section#contact.contact
+				include contact.jade
 		// Bootstrap Core JavaScript
 		script(src='js/bootstrap.min.js')

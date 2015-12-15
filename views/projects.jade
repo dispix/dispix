@@ -1,7 +1,20 @@
-.wrapper.col-xs-12
-	.container
-		.row
-			.section-title.col-xs-12
-				h2 Recent projects
-			.section-body.col-xs-12
-				
+.container
+	.row
+		.section-title.col-xs-12
+			h2 Recent projects
+		.section-body.col-xs-12
+			.row
+				.col-xs-12.col-sm-6.col-md-4
+					a.thumbnail(data-toggle='modal' data-target='#dashboard')
+						img(src="https://d85wutc1n854v.cloudfront.net/live/products/600x375/WB08N77TC.png?v=1.0.5", alt="")
+					#dashboard.modal.fade(tabindex='-1' role='dialog' aria-labelledby='modal dashboard')
+						.modal-dialog(role='document')
+							.modal-content
+								.modal-header
+									button.close(type='button', data-dismiss='modal', aria-label='Close')
+										span(aria-hidden='true') &times;
+									h4.modal-title Homemade e-commerce dashboard
+								.modal-body
+									p One fine body…
+								.modal-footer
+									button.btn.btn-primary(type='button', data-dismiss='modal') Close
