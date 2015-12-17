@@ -33,7 +33,7 @@ $(document).ready(function(){
 	$(document).scroll(function()
 	{
 		var y = $(this).scrollTop()
-		var height = $(window).height() - offset
+		var height = $(window).height() - offset +2
 
 		if (y > height)
 		{
