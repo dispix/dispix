@@ -4,7 +4,7 @@
 			h2 My skills
 		.section-body.col-xs-12
 			#accordion.panel-group(role='tablist', aria-multiselectable='true')
-				.panel.panel-default
+				.panel.panel-default.wow.slideInLeft
 					a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseOne', aria-expanded='false', aria-controls='collapseOne')
 						#headingOne.panel-heading(role='tab')
 							h4.panel-title
@@ -13,9 +13,9 @@
 					#collapseOne.panel-collapse.collapse(role='tabpanel', aria-labelledby='headingOne')
 						.panel-body
 							.row
-								.single-skill.col-xs-12.col-md-6.text-center
+								.single-skill.col-xs-12.col-md-6
 									.row
-										.col-xs-12.col-sm-4
+										.col-xs-12.col-sm-4.text-center
 											img(src="/img/html_logo.png", alt="HTML5 logo")
 										.col-xs-12.col-sm-8
 											h3 HTML 5
@@ -46,16 +46,6 @@
 								.single-skill.col-xs-12.col-md-6
 									.row
 										.col-xs-12.col-sm-4.text-center
-											img(src="img/bootstrap_logo.png", alt="Bootstrap logo" width="100px")
-										.col-xs-12.col-sm-8
-											h3 Bootstrap
-											.progress
-												.progress-bar.progress-bar-success(role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;")
-													| 90%
-											p I love to go mobile first, and Bootstrap is the perfect tool for this job.
-								.single-skill.col-xs-12.col-md-6
-									.row
-										.col-xs-12.col-sm-4.text-center
 											img(src="img/php_logo.png", alt="PHP logo")
 										.col-xs-12.col-sm-8
 											h3 PHP
@@ -66,14 +56,34 @@
 								.single-skill.col-xs-12.col-md-6
 									.row
 										.col-xs-12.col-sm-4.text-center
-											img(src="img/nodejs_logo.png", alt="PHP logo")
+											img(src="img/bootstrap_logo.png", alt="Bootstrap logo" width="100px")
+										.col-xs-12.col-sm-8
+											h3 Bootstrap
+											.progress
+												.progress-bar.progress-bar-success(role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;")
+													| 90%
+											p I love to go mobile first, and I've used Bootstrap for that in a lot of different projects.
+								.single-skill.col-xs-12.col-md-6
+									.row
+										.col-xs-12.col-sm-4.text-center
+											img(src="img/nodejs_logo.png", alt="Nodejs logo")
 										.col-xs-12.col-sm-8
 											h3 Node.js
 											.progress
-												.progress-bar.progress-bar-success(role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;")
-													| 50%
+												.progress-bar.progress-bar-success(role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;")
+													| 70%
 											p I am learning node.js on my freetime and am amazed by it. In my opinion, this technology has a bright future.
-				.panel.panel-default
+								.single-skill.col-xs-12.col-md-6
+									.row
+										.col-xs-12.col-sm-4.text-center
+											img(src="img/gulp_logo.png", alt="Gulp logo")
+										.col-xs-12.col-sm-8
+											h3 Gulp
+											.progress
+												.progress-bar.progress-bar-success(role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;")
+													| 60%
+											p I have already use Gulp and am able to automate most common tasks in a project.
+				.panel.panel-default.wow.slideInLeft
 					a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseTwo', aria-expanded='false', aria-controls='collapseTwo')
 						#headingTwo.panel-heading(role='tab')
 							h4.panel-title
@@ -122,7 +132,7 @@
 												.progress-bar.progress-bar-success(role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;")
 													| 95%
 											p Able to design complex thermal system, either for dynamic heat losses calculations or thermal system sizing.
-				.panel.panel-default
+				.panel.panel-default.wow.slideInLeft
 					a.collapsed(role='button', data-toggle='collapse', data-parent='#accordion', href='#collapseThree', aria-expanded='false', aria-controls='collapseThree')
 						#headingThree.panel-heading(role='tab')
 							h4.panel-title
