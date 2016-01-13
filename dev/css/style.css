@@ -21,12 +21,6 @@ a {
 	min-height: 100vh;
 	z-index: 2;
 }
-/*.text-list {
-	padding-left: 1rem;
-}
-.text-list li:before {
-	content: '- ';
-}*/
 /* Navbar */
 .navbar {
 	background-color: #009688;
