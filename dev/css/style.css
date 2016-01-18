@@ -75,7 +75,7 @@ h1 {
 	box-shadow: 0 0 10px rgba(51, 51, 51, 1);
 	width: 100vw;
 	min-height: calc(100vh - 50px);
-	background-color: #0085BF;
+	background-color: #1976D2;
 }
 h2 {
 	font-family: 'Roboto Mono', sans-serif;
@@ -114,19 +114,19 @@ h2 {
 .projects {
 	position: relative;
 	min-height: calc(100vh - 50px);
-	background-color: #00597F;
+	background-color: #0D47A1;
 }
 /* Story */
 .story {
 	position: relative;
 	min-height: calc(100vh - 50px);
-	background-color: #00A0E5;
+	background-color: #2196F3;
 }
 /* Contact */
 .contact {
 	position: relative;
 	min-height: 300px;
-	background-color: #002D40;
+	background-color: #64B5F6;
 }
 @media screen and (max-width: 768px) {
 	.skills, .projects, .story {
