@@ -15,10 +15,9 @@
   "bugs": {
     "url": "https://github.com/dispix/dispix/issues"
   },
-  "homepage": "https://github.com/dispix/dispix#readme",
+  "homepage": "https://github.com/dispix/dispix",
   "dependencies": {
-    "express": "^4.13.3",
-    "jade": "^1.11.0"
+    "express": "^4.13.3"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
