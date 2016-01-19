@@ -114,7 +114,7 @@ h2 {
 .projects {
 	position: relative;
 	min-height: calc(100vh - 50px);
-	background-color: #0D47A1;
+	background-color: #1E88E5;
 }
 /* Story */
 .story {
@@ -126,7 +126,34 @@ h2 {
 .contact {
 	position: relative;
 	min-height: 300px;
-	background-color: #64B5F6;
+	background-color: #42A5F5;
+}
+.contact a {
+	color: rgb(220, 220, 220);
+}
+.social-icons a {
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	margin: 10px;
+	vertical-align: middle;
+	transition: all .3s;
+}
+.social-icons a.github {
+	background: url(../img/sprites.png) left no-repeat;
+	background-position: 0px 0px;
+}
+.social-icons a.linkedin {
+	background: url(../img/sprites.png) left no-repeat;
+	background-position: -65px 0px;
+}
+.social-icons a.stackoverflow {
+	background: url(../img/sprites.png) left no-repeat;
+	background-position: -130px 0px;
+}
+.social-icons a.google {
+	background: url(../img/sprites.png) left no-repeat;
+	background-position: -195px 0px;
 }
 @media screen and (max-width: 768px) {
 	.skills, .projects, .story {
