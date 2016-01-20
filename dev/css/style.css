@@ -128,8 +128,37 @@ h2 {
 	min-height: 300px;
 	background-color: #42A5F5;
 }
+.contact .row:not(:first-child) {
+	margin-top: 1rem;
+}
+.adress {
+	line-height: 1.2rem;
+
+}
+/*.adress:before {
+	content:"\e021";
+	font-family: "Glyphicons Halflings";
+}
+.telephone {
+	display: block;
+	margin-top: 1rem;
+}
+.telephone:before {
+	content:"\e182";
+	font-family: "Glyphicons Halflings";
+	margin-right: 10px;
+}
+.email {
+	display: block;
+	margin-top: 1rem;
+}
+.email:before {
+	content:"\e171";
+	font-family: "Glyphicons Halflings";
+	margin-right: 10px;
+}*/
 .contact a {
-	color: rgb(220, 220, 220);
+	color: #005850;
 }
 .social-icons a {
 	display: inline-block;
@@ -182,6 +211,9 @@ h2 {
 	.home .section-title {
 		margin-top: 50px;
 		margin-bottom: 20px;
+	}
+	.social {
+		margin-top: 15px;
 	}
 }
 @media screen and (min-width: 768px) {
