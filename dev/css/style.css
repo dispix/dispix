@@ -137,22 +137,34 @@ h2 {
 	height: 65px;
 	margin: 10px;
 	vertical-align: middle;
-	transition: all .3s;
+	transition: color .3s ease;
 }
 .social-icons a.github {
 	background: url(../img/sprites.png) left no-repeat;
+	background-position: 0px -65px;
+}
+.social-icons a.github:hover {
 	background-position: 0px 0px;
 }
 .social-icons a.linkedin {
 	background: url(../img/sprites.png) left no-repeat;
+	background-position: -65px -65px;
+}
+.social-icons a.linkedin:hover {
 	background-position: -65px 0px;
 }
 .social-icons a.stackoverflow {
 	background: url(../img/sprites.png) left no-repeat;
+	background-position: -130px -65px;
+}
+.social-icons a.stackoverflow:hover {
 	background-position: -130px 0px;
 }
 .social-icons a.google {
 	background: url(../img/sprites.png) left no-repeat;
+	background-position: -195px -65px;
+}
+.social-icons a.google:hover {
 	background-position: -195px 0px;
 }
 @media screen and (max-width: 768px) {
