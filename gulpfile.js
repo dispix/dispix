@@ -4,6 +4,7 @@ var rename 		= require('gulp-rename')
 var cssnano 	= require('gulp-cssnano')
 var uglify 		= require('gulp-uglify')
 var livereload 	= require('gulp-livereload')
+// var gzip 		= require('gulp-gzip')
 
 gulp.task('default', ['jades', 'styles', 'scripts', 'watch'])
 
@@ -20,6 +21,7 @@ gulp.task('styles', function()
 	gulp.src('./dev/css/*.css')
 		.pipe(cssnano())
 		.pipe(rename({suffix: '.min'}))
+		// .pipe(gzip())
 		.pipe(gulp.dest('./dist/css'))
 })
 
@@ -28,6 +30,7 @@ gulp.task('scripts', function()
 	gulp.src('./dev/js/*.js')
 		.pipe(uglify())
 		.pipe(rename({suffix: '.min'}))
+		// .pipe(gzip())
 		.pipe(gulp.dest('./dist/js'))
 })
 

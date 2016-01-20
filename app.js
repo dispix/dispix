@@ -1,9 +1,8 @@
+var compress = require('compression')
 var express = require('express')
 var app		= express()
-// var jade	= require('jade')
 
-// app.set('views', __dirname + '/views')
-// app.set('view engine', 'html')
+app.use(compress())
 app.use(express.static('dist'))
 app.get('/', function(req, res)
 {
