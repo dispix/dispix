@@ -8,7 +8,24 @@ $(document).ready(function()
 	// })
 
 	// Navbar height
-	var offset = 50
+	function setOffset ()
+	{
+		if ($('#navbar').is(':visible'))
+		{
+			return 50
+		}
+		else
+		{
+			return 0
+		}
+	}
+
+	var offset = setOffset()
+
+	$(window).resize(function ()
+	{
+		offset = setOffset()
+	})
 
 	// Wow scroll animations
 	var wow = new WOW(
