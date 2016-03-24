@@ -7,7 +7,8 @@ var livereload 	= require('gulp-livereload')
 var imagemin 	= require('gulp-imagemin')
 var pngquant 	= require('imagemin-pngquant')
 
-gulp.task('default', ['jades', 'styles', 'scripts', 'images', 'fonts', 'watch'])
+gulp.task('default', ['jades', 'styles', 'scripts', 'images', 'fonts'])
+gulp.task('dev', ['default', 'watch'])
 
 gulp.task('jades', function()
 {
