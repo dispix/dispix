@@ -19,7 +19,7 @@ gulp.task('jades', function()
 
 gulp.task('styles', function()
 {
-	gulp.src('dev/css/*.css')
+	gulp.src('dev/css/*.css', '!dev/css/*.min.css')
 		.pipe(cssnano())
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('./dist/css'))
