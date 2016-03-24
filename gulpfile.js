@@ -24,6 +24,9 @@ gulp.task('styles', function()
 		.pipe(cssnano())
 		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('./dist/css'))
+
+	gulp.src('dev/css/*.min.css')
+		.pipe(gulp.dest('./dist/css'))
 })
 
 gulp.task('scripts', function()
