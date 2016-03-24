@@ -31,9 +31,12 @@ gulp.task('styles', function()
 
 gulp.task('scripts', function()
 {
-	gulp.src('dev/js/*.js')
+	gulp.src(['dev/js/*.js', '!dev/js/*.min.js'])
 		.pipe(uglify())
 		.pipe(rename({suffix: '.min'}))
+		.pipe(gulp.dest('./dist/js'))
+
+	gulp.src('dev/js/*.min.js')
 		.pipe(gulp.dest('./dist/js'))
 })
 
