@@ -2,7 +2,13 @@
 
 $(document).ready(function()
 {
-	var offset = 50// Navbar height
+	// Activate modals
+	// $('#forumModal').on('shown.bs.modal', function () {
+	// 	$('#myInput').focus()
+	// })
+
+	// Navbar height
+	var offset = 50
 
 	// Wow scroll animations
 	var wow = new WOW(
@@ -23,7 +29,7 @@ $(document).ready(function()
 	$('#navbar li a').click(function(event)
 	{
 		event.preventDefault()
-		
+
 		if ($(this).attr('href') == '#home')
 		{
 			$('html, body').animate({scrollTop: 0}, 500)
@@ -35,10 +41,10 @@ $(document).ready(function()
 		}
 	})
 
-	// Add active class on panel
-	$('collapsed').click(function(){
-		$('.skill panel').removeClass('active')
-		$(this).addClass('active')
+	// Scroll back when opening a skill panel
+	$('.panel-heading').click(function()
+	{
+		$('html, body').animate({scrollTop: $('.skills .section-title').offset().top - offset}, 500)
 	})
 
 	// Navbar shadow after main div

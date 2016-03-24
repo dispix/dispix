@@ -1,6 +1,6 @@
-var compress = require('compression')
-var express = require('express')
-var app		= express()
+var compress 	= require('compression')
+var express 	= require('express')
+var app			= express()
 
 app.use(compress())
 app.use(express.static('dist'))

@@ -27,8 +27,6 @@ html(lang='en')
 		link(rel="stylesheet", href="../css/style.min.css", type="text/css")
 		// jQuery
 		script(src='../js/jquery.min.js')
-		// Custom js
-		script(src='../js/main.min.js')
 	body
 		include nav.jade
 		section#home.home
@@ -42,6 +40,8 @@ html(lang='en')
 				include story.jade
 			section#contact.contact
 				include contact.jade
+		// Custom js
+		script(src='../js/main.min.js')
 		// Bootstrap Core JavaScript
 		script(src='../js/bootstrap.min.js')
 		// Wow.js
