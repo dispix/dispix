@@ -2,12 +2,14 @@
 
 $(document).ready(function()
 {
-	// Activate modals
-	// $('#forumModal').on('shown.bs.modal', function () {
-	// 	$('#myInput').focus()
-	// })
+	// Offset initialization and updating
+	var offset = setOffset()
 
-	// Navbar height
+	$(window).resize(function ()
+	{
+		offset = setOffset()
+	})
+
 	function setOffset ()
 	{
 		if ($('#navbar').is(':visible'))
@@ -19,13 +21,6 @@ $(document).ready(function()
 			return 0
 		}
 	}
-
-	var offset = setOffset()
-
-	$(window).resize(function ()
-	{
-		offset = setOffset()
-	})
 
 	// Wow scroll animations
 	var wow = new WOW(
