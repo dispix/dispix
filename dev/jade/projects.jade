@@ -4,23 +4,67 @@
 			h2 Recent projects
 		.section-body.col-xs-12
 			.row
-				.col-xs-12.col-sm-6
+				.project.col-xs-12.col-sm-6.wow.fadeIn
 					.panel.panel-default
 						.panel-heading
-							h4 A simple forum
-						.panel-body This forum was a project made entire from scratch using PHP and MySQL with the aim to learn about the fundamental features of those technologies
+							h4 Simple forum
+						.panel-body This forum was a project made entire from scratch using PHP and MySQL with the aim to learn about the fundamental features of those technologies.
 						.panel-footer
-							button.btn.btn-primary(type='button', data-toggle='modal', data-target='#forumProject') Learn more
-							a.btn.btn-default(href="http://forum.dispix.net", type='button') Project page
+							a.btn.btn-primary(type='button', data-toggle='modal', data-target='#forumProject') Learn more
+							a.btn.btn-default(href="http://forum.dispix.net", type='button', target="_blank") Live demo
 					#forumProject.modal.fade(tabindex='-1', role='dialog', aria-labelledby='forumProjectLabel')
 						.modal-dialog(role='document')
 							.modal-content
-								.modal-header
-									button.close(type='button', data-dismiss='modal', aria-label='Close')
-										span(aria-hidden='true') &times;
-									h4#forumProjectLabel.modal-title Modal title
 								.modal-body
-									| Blabla bla c'est pour mon forum
+									| This project is a pure PHP forum. It is written from scratch and was designed to handle user management, section/subsection/topic management and more. This was a very interesting project as it allowed me to approach a lot of different things that are essential to a web project (session management, database management, etc.).
 								.modal-footer
-									a.btn.btn-default(href="http://forum.dispix.net", type='button') Project page
-									button.btn.btn-default(type='button', data-dismiss='modal') Close
+									a.btn.btn-default(href="http://forum.dispix.net", type='button', target="_blank") Live demo
+									a.btn.btn-primary(type='button', data-dismiss='modal') Close
+				.project.col-xs-12.col-sm-6.wow.fadeIn
+					.panel.panel-default
+						.panel-heading
+							h4 Contact manager
+						.panel-body Designed with Laravel, this project was designed to let people manage contacts.
+						.panel-footer
+							a.btn.btn-primary(type='button', data-toggle='modal', data-target='#laravelProject') Learn more
+							a.btn.btn-default(href="https://github.com/dispix/laravel-people", type='button', target="_blank") Project sources
+					#laravelProject.modal.fade(tabindex='-1', role='dialog', aria-labelledby='laravelProjectLabel')
+						.modal-dialog(role='document')
+							.modal-content
+								.modal-body
+									| [INPUT TEXT HERE]
+								.modal-footer
+									a.btn.btn-default(href="https://github.com/dispix/laravel-people", type='button', target="_blank") Project sources
+									a.btn.btn-primary(type='button', data-dismiss='modal') Close
+				.project.col-xs-12.col-sm-6.wow.fadeIn
+					.panel.panel-default
+						.panel-heading
+							h4 Angular music player
+						.panel-body An angular music player with timing restrictions.
+						.panel-footer
+							a.btn.btn-primary(type='button', data-toggle='modal', data-target='#angularProject') Learn more
+							a.btn.btn-default(href="https://github.com/dispix/angular-music-player", type='button', target="_blank") Project sources
+					#angularProject.modal.fade(tabindex='-1', role='dialog', aria-labelledby='angularProjectLabel')
+						.modal-dialog(role='document')
+							.modal-content
+								.modal-body
+									| [INPUT TEXT HERE]
+								.modal-footer
+									a.btn.btn-default(href="https://github.com/dispix/angular-music-player", type='button', target="_blank") Project sources
+									a.btn.btn-primary(type='button', data-dismiss='modal') Close
+				.project.col-xs-12.col-sm-6.wow.fadeIn
+					.panel.panel-default
+						.panel-heading
+							h4 A node blog
+						.panel-body A blog realised from scratch with node.js, inspired by the PHP MVC architecture.
+						.panel-footer
+							a.btn.btn-primary(type='button', data-toggle='modal', data-target='#angularProject') Learn more
+							a.btn.btn-default(href="https://github.com/dispix/anodeblog", type='button', target="_blank") Project sources
+					#angularProject.modal.fade(tabindex='-1', role='dialog', aria-labelledby='angularProjectLabel')
+						.modal-dialog(role='document')
+							.modal-content
+								.modal-body
+									| [INPUT TEXT HERE]
+								.modal-footer
+									a.btn.btn-default(href="https://github.com/dispix/anodeblog", type='button', target="_blank") Project sources
+									a.btn.btn-primary(type='button', data-dismiss='modal') Close

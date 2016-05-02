@@ -27,7 +27,7 @@ $(document).ready(function()
 		{
 			boxClass:		'wow',		// default
 			animateClass:	'animated',	// default
-			offset:			50,
+			offset:			200,
 			mobile:			true,		// default
 			live: 			false
 		}
