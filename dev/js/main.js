@@ -54,7 +54,7 @@ $(document).ready(function()
 	})
 
 	// Scroll back when opening a skill panel
-	$('.panel-heading').click(function()
+	$('.skills .panel-heading').click(function()
 	{
 		$('html, body').animate({scrollTop: $('.skills .section-title').offset().top - offset}, 500)
 	})
