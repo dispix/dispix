@@ -21,6 +21,10 @@ a {
 	min-height: 100vh;
 	z-index: 2;
 }
+.bullet {
+	list-style-type: disc;
+	margin-left: 20px;
+}
 /* Navbar */
 .navbar {
 	background-color: #009688;
@@ -145,9 +149,9 @@ h2 {
 .contact .row:not(:first-child) {
 	margin-top: 1rem;
 }
-.adress {
+.address {
 	line-height: 1.2rem;
-
+	margin-bottom: 0;
 }
 .contact a {
 	color: #005850;
